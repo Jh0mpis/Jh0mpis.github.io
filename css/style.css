@@ -530,10 +530,12 @@ section {
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
     width: 10vw;
+    min-width: 77px;
 }
 
 #header.nav-collapse nav a{
   width: 10vw;
+  min-width: 77px;
 }
 
 #header.nav-solid nav a:hover {
@@ -727,6 +729,60 @@ a img {
 
 a img:hover {
     opacity: 0.7;
+}
+
+#image-text-wrapper {
+  padding-top: 150px;
+  width: 70vw;
+  overflow: auto;
+  margin: auto;
+}
+
+#cv-wrapper {
+  padding-top: 50px;
+  width: 70vw;
+  overflow: auto;
+  margin: auto;
+}
+
+#left-image {
+  width: 40%;
+  height: 28vw;
+  background: url("../images/user-images/la-nacho.jpg") no-repeat center top;
+  background-size: cover;
+  float: left;
+  margin-right: 5%;
+  display: flex;
+}
+
+#right-image {
+  width: 40%;
+  height: 28vw;
+  background: url("../images/user-images/HPC.png") no-repeat center top;
+  background-size: cover;
+  float: left;
+  margin-top: 50px;
+  margin-left: 5%;
+  display: flex;
+}
+
+#right-text{
+  width: 50%;
+  height: 28vw;
+  /*background-color: #00f;*/
+  font-size: 18px;
+  float: left;
+  display: flex;
+}
+
+#left-text{
+  width: 50%;
+  height: 28vw;
+  /*background-color: #00f;*/
+  margin-top: 50px;
+  font-size: 18px;
+  float: left;
+  display: flex;
 }
 
 /*------------------------------------------------------------------------------------------*/
