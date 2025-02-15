@@ -51,24 +51,33 @@ a:hover, #header.nav-solid nav a:hover {
 /* Transparent Navigation Color on a Banner */
 
 #header nav a, #header i {
-    color:#111;
+    color:#333;
 }
-
 
 /* Navigation Colors when the Navigation is sticky and solid */ 
 
 #header.nav-solid, #header.nav-solid a, #header.nav-solid i, #nav-mobile ul li a {
-    color:#333;
+    color:#333333;
 }
 
 
 /* Navigation Active State */
 
 #header.nav-solid .active {
-    color: #d2b356;
-    border-color: #d2b356;
+    color: #ffffff;
+    background: url("../images/banner-images/Cosmology 1.png") no-repeat center top;
+    background-size:cover;
+    transform: scale(1.1);
+    border-color: #000;
 }    
 
+#header.nav-collapse .active {
+    color: #ffffff;
+    background: url("../images/banner-images/Cosmology 1.png") no-repeat center top;
+    background-size:cover;
+    transform: scale(1.1);
+    border-color: #000;
+}    
 
 
 /*------------------------------------------------------------------------------------------*/

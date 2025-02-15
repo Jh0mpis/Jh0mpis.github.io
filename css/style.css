@@ -496,8 +496,17 @@ section {
     padding: 0 10px;
 }
 
+#header nav a{
+  transition: all 0.3s ease;
+  background-color: #fff;
+  color: #333;
+}
+
 #header nav a:hover {
-    opacity: 0.6;
+    transform: scale(1.1) !important;
+    opacity: 1;
+    color: #fff;
+    background-color: #000;
 }
 
 /*Navigation Solid*/
@@ -520,10 +529,17 @@ section {
     -moz-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
+    width: 10vw;
+}
+
+#header.nav-collapse nav a{
+  width: 10vw;
 }
 
 #header.nav-solid nav a:hover {
     opacity: 1;
+    color: #fff !important;
+    background-color: #000;
 }
 
 /* Social Elements when Solid*/
@@ -759,7 +775,7 @@ h6 {
 
 .section-heading {
     padding: 0 10px;
-    background-color: #000;
+    background-color: #151515;
 }
 
 .section-subtitle {
@@ -790,7 +806,7 @@ h6 {
 }
 
 @keyframes blink {
-  50%   {background-color:black;}
+  50%   {background-color:#151515;}
   100% {background-color:white;}
 }
 
@@ -799,12 +815,12 @@ h6 {
 }
 
 #banner-content.row {
-    padding-top: 170px;
-    padding-bottom: 100px;
+    /*padding-top: 170px;*/
+    /*padding-bottom: 100px;*/
 }
 
 #banner h1 {
-    padding-top: 5%;
+    padding-top: 2%;
 }
 
 #banner .section-heading:before {
