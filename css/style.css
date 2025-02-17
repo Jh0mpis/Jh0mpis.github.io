@@ -180,6 +180,7 @@ input:focus, textarea:focus {
 /*------------------------------------------------------------------------------------------*/
 
 section {
+    padding-top: 100px;
     clear: both;
     overflow: hidden;
 }
@@ -732,10 +733,13 @@ a img:hover {
 }
 
 #image-text-wrapper {
-  padding-top: 150px;
   width: 70vw;
   overflow: auto;
   margin: auto;
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  flex-direction: row;
 }
 
 #cv-wrapper {
@@ -752,7 +756,7 @@ a img:hover {
   background-size: cover;
   float: left;
   margin-right: 5%;
-  display: flex;
+  display: block;
 }
 
 #right-image {
@@ -761,28 +765,77 @@ a img:hover {
   background: url("../images/user-images/HPC.png") no-repeat center top;
   background-size: cover;
   float: left;
-  margin-top: 50px;
   margin-left: 5%;
-  display: flex;
+  display: block;
 }
 
 #right-text{
   width: 50%;
-  height: 28vw;
+  height: auto;
+  font-weight: normal;
   /*background-color: #00f;*/
-  font-size: 18px;
+  font-size: 20px;
   float: left;
-  display: flex;
+  display: block;
 }
 
 #left-text{
   width: 50%;
-  height: 28vw;
+  height: auto;
+  font-weight: normal;
   /*background-color: #00f;*/
-  margin-top: 50px;
-  font-size: 18px;
+  font-size: 20px;
   float: left;
-  display: flex;
+  display: block;
+}
+
+#ed-table{
+  width: 70%;
+  margin: auto;
+  font-weight: normal;
+}
+
+#ed-table table{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#ed-table th{
+  background-color: #f9f9f9;
+  border-bottom: 4px solid grey;
+  font-size: 20px;
+  padding: 15px;
+  color: #555;
+}
+
+#ed-table td{
+  border-bottom: 2px solid grey;
+  padding: 15px;
+  font-size: 18px;
+}
+
+#ed-table th.date{
+  width: 30%;
+}
+
+#ed-table th.text{
+  width: 70%;
+}
+
+#ed-table tr.gray{
+  background-color: #f2f2f2;
+}
+
+#ed-table td.date{
+  text-align: center;
+}
+
+#ed-table i{
+  font-size: 15px;
+}
+
+#ed-table b{
+  color: #555;
 }
 
 /*------------------------------------------------------------------------------------------*/
@@ -1246,6 +1299,22 @@ blockquote {
         border-bottom: 10px solid transparent;
     }
 
+  #image-text-wrapper {
+    width: 100vw;
+    flex-direction: column;
+  }
+
+  #left-image {
+    width: 60%;
+    height: 60vw;
+    margin: 0%;
+  }
+
+  #right-image {
+    width: 60%;
+    height: 60vw;
+    margin: 0%;
+  }
 }
 
 /* Gallery Styling */

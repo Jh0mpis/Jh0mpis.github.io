@@ -1,4 +1,4 @@
-/* Namari Landing Page Dynamic Style Index
+/*Currently, I'm /* Namari Landing Page Dynamic Style Index
 
 1. Website Default Styling
 2. Navigation
@@ -117,7 +117,6 @@ a:hover, #header.nav-solid nav a:hover {
 /* Banner Background and Text Colors */
 
 #banner {
-    /*background: url("../images/banner-images/banner-image-1.jpg") no-repeat center top;*/
     background: url("../images/banner-images/General relativ 1.png") no-repeat center top;
     background-size:cover;
 }
