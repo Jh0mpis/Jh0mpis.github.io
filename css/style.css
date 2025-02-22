@@ -24,6 +24,7 @@
 - 6.5 Clients
 - 6.6 Pricing Table
 7. Footer
+8. Additional
 
 
 /*------------------------------------------------------------------------------------------*/
@@ -773,7 +774,6 @@ a img:hover {
   width: 50%;
   height: auto;
   font-weight: normal;
-  /*background-color: #00f;*/
   font-size: 20px;
   float: left;
   display: block;
@@ -783,7 +783,6 @@ a img:hover {
   width: 50%;
   height: auto;
   font-weight: normal;
-  /*background-color: #00f;*/
   font-size: 20px;
   float: left;
   display: block;
@@ -885,6 +884,7 @@ h6 {
 .section-heading {
     padding: 0 10px;
     background-color: #151515;
+    border-radius: 20px;
 }
 
 .section-subtitle {
@@ -1314,6 +1314,21 @@ blockquote {
     width: 60%;
     height: 60vw;
     margin: 0%;
+  }
+
+  .results-summary-container {
+    flex-direction: column;
+  }
+
+  .results-summary-container__result {
+    width: 100% !important;
+  }
+  .results-summary-container__options{
+    width: 100% !important;
+  }
+  .result-box {
+    width: 50vw !important;
+    height: 50vw !important;
   }
 }
 
@@ -1828,6 +1843,193 @@ blockquote {
 .la-ball-triangle-path.la-3x > div {
     width: 30px;
     height: 30px;
+}
+
+/*------------- 8. Additional ---------*/
+
+.results-summary-container {
+  font-family: "Hanken Grotesk", sans-serif;
+  height: auto;
+  display: flex;
+  margin: 40px auto;
+  padding: 10px;
+  width: 70%;
+  gap: 10px;
+  border-radius: 30px;
+  box-shadow: 10px 10px 30px rgba(120, 87, 255, 0.3);
+  backface-visibility: hidden;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.heading-primary {
+  font-size: 46px;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #f7bb97, #dd5e89);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1.4);
+}
+
+.heading-secondary {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.heading-secondary--blue {
+  color: hsl(255, 70%, 70%);
+}
+
+.heading-tertiary {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: hsl(221, 100%, 96%);
+}
+
+.paragraph {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: hsl(221, 100%, 96%);
+  margin-bottom: 15px;
+}
+
+.paragraph-text-box {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.margin-1 {
+  margin-bottom: 10px;
+}
+
+.results-summary-container__result {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 5px;
+  border-radius: 30px 10px;
+  background: linear-gradient(0deg, #000, #404040);
+  
+  
+.result-box {
+  width: 17vw;
+  height: 17vw;
+  border-radius: 10%;
+  background-position: 100% 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.result-box img{
+  width: 100%;
+  height: 100%;
+}
+
+.result {
+  margin-top: -18px;
+  font-size: 14px;
+  font-weight: 400;
+  color: hsl(241, 100%, 89%);
+}
+}
+
+.results-summary-container__options {
+  width: 65%;
+  font-size: 1.3rem;
+  font-weight: normal;
+  margin: auto;
+}
+
+.summary-result-options {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.result-option {
+  width: 210px;
+  height: 36px;
+  background-color: hsl(0, 100%, 95%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  color: #ffffff;
+  background-image: linear-gradient(to right, #000, #505050);
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(5px);
+  background-image: linear-gradient(to left, #000, #505050);
+}
+
+.icon {
+  cursor: pointer;
+  filter: grayscale(1);
+  transition: 0.3s linear;
+}
+
+.icon:hover {
+  filter: grayscale(0);
+}
+
+.summary-text{
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 1.1rem;
+    padding: 20px;
+    height: auto;
+    margin: auto 0px;
+}
+
+.project-icons-wrapper{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  justify-content: center;
+}
+
+
+.project-icon{
+  height: 10%;
+  width: 10%;
+  margin: 0 25px;
+  font-size: 1rem;
 }
 
 /*
@@ -2483,7 +2685,3 @@ blockquote {
     }
 
 }
-
-
-
-

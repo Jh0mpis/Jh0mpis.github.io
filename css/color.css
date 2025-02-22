@@ -157,7 +157,8 @@ body {
 
 #banner h1 {
     /*font-family: 'Open Sans', sans-serif, Arial, Helvetica;*/
-    font-size:62px;
+    font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+    font-size:3rem;
     line-height:60px;
     font-weight:800;
     color:#fff;
@@ -167,8 +168,8 @@ body {
 #banner h2 {
     /*font-family: 'Open Sans', sans-serif, Arial, Helvetica;*/
     font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
-    font-size:18px;
-    font-weight:300;
+    font-size:1.17rem;
+    font-weight:400;
     color:#ffffff;
 }
 
