@@ -751,6 +751,13 @@ a img:hover {
   margin: auto;
 }
 
+#cv-wrapper-projects {
+  padding-top: 50px;
+  width: 70vw;
+  overflow: auto;
+  margin: auto;
+}
+
 #left-image {
   width: 40%;
   height: 28vw;
